@@ -1,5 +1,7 @@
 # Week 7 Assignment - Final Project
-* Name:
+* Name: Super Jeopardy
+
+The app will be hosted at [Super Jeopardy](https://munseyjscript300final.azurewebsites.net/) (work in progress)
 
 * Elevator Pitch
 Super Jeopardy is a game for all to enjoy.  Built with React and running on the Microsoft Azure cloud, this game will provide hours of entertainment.
