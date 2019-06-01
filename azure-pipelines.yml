@@ -12,7 +12,7 @@ variables:
   azureSubscription: '662e5e7c-0124-4794-8e89-25791b2bd1dd'
 
   # Web app name
-  webAppName: 'jscript300test3'
+  webAppName: 'munseyjscript300final'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
