@@ -9,12 +9,20 @@ import q6 from './cannedQuestions/6.json';
 
 class MainBoard extends React.Component {
     render() {
-        console.log(q1);
+        console.log();
         return (
             <div>
                 <div>Jeopardy</div>
                 <table>
                     <tbody>
+                        <tr>
+                            <th>{q1.results[0].category}</th>
+                            <th>{q2.results[0].category}</th>
+                            <th>{q3.results[0].category}</th>
+                            <th>{q4.results[0].category}</th>
+                            <th>{q5.results[0].category}</th>
+                            <th>{q6.results[0].category}</th>
+                        </tr>
                         <tr>
                             <td>{q1.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
                             <td>{q2.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>

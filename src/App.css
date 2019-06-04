@@ -24,6 +24,14 @@
   flex-wrap: wrap;
 }
 
+th {
+  word-break: break-word;
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
 .card
 {
   width: 150px;
