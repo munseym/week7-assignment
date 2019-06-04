@@ -1,0 +1,65 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment: Music",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Which of the following is NOT a real song from the band Thousand Foot Krutch?",
+            "correct_answer": "Limitless Fury",
+            "incorrect_answers": [
+                "Let The Sparks Fly",
+                "Down",
+                "Give Up The Ghost"
+            ]
+        },
+        {
+            "category": "Entertainment: Music",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
+            "correct_answer": "Hurt",
+            "incorrect_answers": [
+                "Closer",
+                "A Warm Place",
+                "Big Man with a Gun"
+            ]
+        },
+        {
+            "category": "Entertainment: Music",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What is Brian May&#039;s guitar called?",
+            "correct_answer": "Red Special",
+            "incorrect_answers": [
+                "Blue Special",
+                "Green Special",
+                "Yellow Special"
+            ]
+        },
+        {
+            "category": "Entertainment: Music",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "What album did The Lumineers release in 2016?",
+            "correct_answer": "Cleopatra",
+            "incorrect_answers": [
+                "Winter",
+                "The Lumineers",
+                "Tracks From The Attic"
+            ]
+        },
+        {
+            "category": "Entertainment: Music",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "The heavy metal band Black Sabbath hail from which English city?",
+            "correct_answer": "Birmingham",
+            "incorrect_answers": [
+                "Manchester",
+                "London",
+                "Newcastle-Upon-Tyne"
+            ]
+        }
+    ]
+}

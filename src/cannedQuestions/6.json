@@ -1,0 +1,65 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "What is the name of Team Fortress 2&#039;s Heavy Weapons Guy&#039;s minigun?",
+            "correct_answer": "Sasha",
+            "incorrect_answers": [
+                "Betty",
+                "Anna",
+                "Diana"
+            ]
+        },
+        {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In which order do you need to hit some Deku Scrubs to open the first boss door in &quot;Ocarina of Time&quot;?",
+            "correct_answer": "2, 3, 1",
+            "incorrect_answers": [
+                "1, 2, 3",
+                "1, 3, 2",
+                "2, 1, 3"
+            ]
+        },
+        {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "In the &quot;Worms&quot; series of video games, which of these weapons is affected by wind?",
+            "correct_answer": "Bazooka",
+            "incorrect_answers": [
+                "Grenade",
+                "Air Strike",
+                "Mortar"
+            ]
+        },
+        {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which of these is NOT the name of a team leader in Pok&eacute;mon GO?",
+            "correct_answer": "Leif",
+            "incorrect_answers": [
+                "Blanche",
+                "Spark",
+                "Candela"
+            ]
+        },
+        {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which one of these games came out first?",
+            "correct_answer": "Terraria",
+            "incorrect_answers": [
+                "Minecraft",
+                "Starbound",
+                "Factorio"
+            ]
+        }
+    ]
+}

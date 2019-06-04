@@ -1,0 +1,65 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment: Film",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Who wrote and directed the 1986 film &#039;Platoon&#039;?",
+            "correct_answer": "Oliver Stone",
+            "incorrect_answers": [
+                "Francis Ford Coppola",
+                "Stanley Kubrick",
+                "Michael Cimino"
+            ]
+        },
+        {
+            "category": "Entertainment: Film",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "The 2016 Disney animated film &#039;Moana&#039; is based on which culture?",
+            "correct_answer": "Polynesian",
+            "incorrect_answers": [
+                "Native American",
+                "Japanese",
+                "Nordic"
+            ]
+        },
+        {
+            "category": "Entertainment: Film",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "In what year did Clint Eastwood star as Inspector Harry Callahan in the film &quot;Dirty Harry&quot;?",
+            "correct_answer": "1971",
+            "incorrect_answers": [
+                "1975",
+                "1983",
+                "1969"
+            ]
+        },
+        {
+            "category": "Entertainment: Film",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Before &quot;Jurassic Park III&quot; was finalized and the Spinosaurus was chosen, which dinosaur was going to be the star?",
+            "correct_answer": "Baryonyx",
+            "incorrect_answers": [
+                "Tyrannosaurus Rex",
+                "Velociraptor",
+                "Suchomimus"
+            ]
+        },
+        {
+            "category": "Entertainment: Film",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which former Star Trek actor directed Three Men and a Baby (1987)?",
+            "correct_answer": "Leonard Nimoy",
+            "incorrect_answers": [
+                "William Shatner",
+                "George Takei",
+                "James Doohan"
+            ]
+        }
+    ]
+}
