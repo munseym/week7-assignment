@@ -14,14 +14,16 @@ class MainBoard extends React.Component {
             <div>
                 <div>Jeopardy</div>
                 <table>
-                    <tr>
-                        <td>{q1.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
-                        <td>{q2.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
-                        <td>{q3.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
-                        <td>{q4.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
-                        <td>{q5.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
-                        <td>{q6.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>{q1.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
+                            <td>{q2.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
+                            <td>{q3.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
+                            <td>{q4.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
+                            <td>{q5.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
+                            <td>{q6.results.map((column, i) => <Column key={i} id={i} {...column}/>)}</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         );

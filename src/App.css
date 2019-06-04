@@ -19,6 +19,23 @@
   color: white;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card
+{
+  width: 150px;
+  height: 130px;
+  padding: 10px;
+	border: solid 1px #808080;
+	background-color: white;
+	display: inline-block;
+	color:black;
+	margin: 3px;
+}
+
 .App-link {
   color: #61dafb;
 }

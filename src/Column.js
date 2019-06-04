@@ -1,12 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Tile from './Tile'
 
 class Column extends React.Component {
-    static propTypes = {
-        response_code: PropTypes.number,
-        results: PropTypes.arrayOf(PropTypes.instanceOf(Tile))
-    }
+    
 
     render(){
         let val = this.props.id;
@@ -14,7 +9,7 @@ class Column extends React.Component {
         val *= 100;
         return (
             <div>
-                {val} {this.props.question}
+                <div className="card" dangerouslySetInnerHTML={{__html: this.props.question}} />
             </div>
         );
     }
