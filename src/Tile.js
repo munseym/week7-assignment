@@ -40,16 +40,25 @@ class Tile extends React.Component {
                 </a>
             )
         }
-        else return (
-            <div>
-                <div className="card" dangerouslySetInnerHTML={{ __html: this.props.question }} />
+        else if (this.state.currentState === 'answerQuestion') {
+            return (
                 <div>
-                    <ul>
-                        {this.answers.map(answer => <li>{answer}</li>)}
-                    </ul>
+                    <div className="card" dangerouslySetInnerHTML={{ __html: this.props.question }} />
+                    <div>
+                        <ul>
+                            {this.answers.map(answer => <li>{answer}</li>)}
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        }
+        else {
+            return (
+                <div>
+                    Under Construction
+                </div>
+            );
+        }
     }
 }
 
