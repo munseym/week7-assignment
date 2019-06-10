@@ -82,7 +82,7 @@ class MainBoard extends React.Component {
 
         return (
             <div>
-                <div><h2>Jeopardy</h2></div>
+                <div><h2>Jeopardy!</h2></div>
                 <div><h3>${this.state.score}</h3></div>
                 <table>
                     <tbody>
