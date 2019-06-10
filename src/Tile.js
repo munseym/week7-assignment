@@ -64,7 +64,9 @@ class Tile extends React.Component {
                             <ul>
                                 {this.answers.map((answer, index) =>
                                     <li key={index}>
-                                        {answer}
+                                        <div dangerouslySetInnerHTML={{
+                                            __html: answer
+                                        }} />
                                     </li>)}
                             </ul>
                         </div>
