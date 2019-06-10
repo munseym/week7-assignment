@@ -46,7 +46,10 @@ class Tile extends React.Component {
                     <div className="card" dangerouslySetInnerHTML={{ __html: this.props.question }} />
                     <div>
                         <ul>
-                            {this.answers.map(answer => <li>{answer}</li>)}
+                            {this.answers.map((answer, index) => 
+                            <li key={index}>
+                                {answer}
+                            </li>)}
                         </ul>
                     </div>
                 </div>
