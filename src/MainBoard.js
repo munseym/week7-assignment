@@ -14,8 +14,16 @@ class MainBoard extends React.Component {
             USE_WEB_SERVICE: true,
             isLoading: true,
             hasError: false,
+            score: 0,
             category: []
         }
+        this.adjustScore = this.adjustScore.bind(this);
+    }
+
+    adjustScore(amount) {
+        const stateCopy = this.state;
+        stateCopy.score += amount;
+        this.setState(stateCopy);
     }
 
     //Copied from https://javascript.info/task/shuffle
@@ -58,6 +66,8 @@ class MainBoard extends React.Component {
             stateCopy.category.push(q4);
             stateCopy.category.push(q5);
             stateCopy.category.push(q6);
+            stateCopy.isLoading = false;
+            this.setState(stateCopy);
         }
     }
 
@@ -72,7 +82,8 @@ class MainBoard extends React.Component {
 
         return (
             <div>
-                <div>Jeopardy</div>
+                <div><h2>Jeopardy</h2></div>
+                <div><h3>${this.state.score}</h3></div>
                 <table>
                     <tbody>
                         <tr>
@@ -84,12 +95,12 @@ class MainBoard extends React.Component {
                             <th className="columnHeader">{this.state.category[5].results[0].category}</th>
                         </tr>
                         <tr>
-                            <td>{this.state.category[0].results.map((column, i) => <Tile key={i} id={i} {...column} />)}</td>
-                            <td>{this.state.category[1].results.map((column, i) => <Tile key={i} id={i} {...column} />)}</td>
-                            <td>{this.state.category[2].results.map((column, i) => <Tile key={i} id={i} {...column} />)}</td>
-                            <td>{this.state.category[3].results.map((column, i) => <Tile key={i} id={i} {...column} />)}</td>
-                            <td>{this.state.category[4].results.map((column, i) => <Tile key={i} id={i} {...column} />)}</td>
-                            <td>{this.state.category[5].results.map((column, i) => <Tile key={i} id={i} {...column} />)}</td>
+                            <td>{this.state.category[0].results.map((column, i) => <Tile key={i} id={i} adjustScore={this.adjustScore} {...column} />)}</td>
+                            <td>{this.state.category[1].results.map((column, i) => <Tile key={i} id={i} adjustScore={this.adjustScore} {...column} />)}</td>
+                            <td>{this.state.category[2].results.map((column, i) => <Tile key={i} id={i} adjustScore={this.adjustScore} {...column} />)}</td>
+                            <td>{this.state.category[3].results.map((column, i) => <Tile key={i} id={i} adjustScore={this.adjustScore} {...column} />)}</td>
+                            <td>{this.state.category[4].results.map((column, i) => <Tile key={i} id={i} adjustScore={this.adjustScore} {...column} />)}</td>
+                            <td>{this.state.category[5].results.map((column, i) => <Tile key={i} id={i} adjustScore={this.adjustScore} {...column} />)}</td>
                         </tr>
                     </tbody>
                 </table>

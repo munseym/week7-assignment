@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: #060CE9;
+  color: white;
 }
 
 .App-logo {
@@ -38,8 +40,8 @@ th {
   height: 50px;
   padding: 10px;
 	border: solid 1px #808080;
-	background-color: white;
-	color:black;
+	background-color: #115FF4;
+	color:white;
 	margin: 3px;
 }
 
@@ -49,9 +51,21 @@ th {
   height: 130px;
   padding: 10px;
 	border: solid 1px #808080;
-	background-color: white;
+	background-color: #115FF4;
 	display: inline-block;
-	color:black;
+	color:white;
+	margin: 3px;
+}
+
+.dollars
+{
+  width: 150px;
+  height: 130px;
+  padding: 10px;
+	border: solid 1px #808080;
+	background-color: #115FF4;
+	display: inline-block;
+	color:orange;
 	margin: 3px;
 }
 

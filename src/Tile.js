@@ -4,7 +4,7 @@ class Tile extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentState: 'dollars'
+            currentState: 'dollars',
         };
 
         this.answers = this.props.incorrect_answers;
@@ -15,6 +15,21 @@ class Tile extends React.Component {
         if (this.state.currentState === 'dollars') {
             this.setState({
                 currentState: 'answerQuestion'
+            });
+        }
+    }
+
+    qaHandleClick = (e) => {
+        const val = (this.props.id + 1) * 100;
+        if (e.target.textContent.includes(this.props.correct_answer)) {
+            this.props.adjustScore(val);
+            this.setState({
+                currentState: 'correct'
+            });
+        } else {
+            this.props.adjustScore(-1 * val);
+            this.setState({
+                currentState: 'incorrect'
             });
         }
     };
@@ -34,31 +49,40 @@ class Tile extends React.Component {
         if (this.state.currentState === 'dollars') {
             return (
                 <a href onClick={this.handleClick}>
-                    <div className="card">
-                        {val}
+                    <div className="dollars card">
+                        ${val}
                     </div>
                 </a>
             )
         }
         else if (this.state.currentState === 'answerQuestion') {
             return (
-                <div>
-                    <div className="card" dangerouslySetInnerHTML={{ __html: this.props.question }} />
+                <a href onClick={this.qaHandleClick}>
                     <div>
-                        <ul>
-                            {this.answers.map((answer, index) => 
-                            <li key={index}>
-                                {answer}
-                            </li>)}
-                        </ul>
+                        <div className="card" dangerouslySetInnerHTML={{ __html: this.props.question }} />
+                        <div>
+                            <ul>
+                                {this.answers.map((answer, index) =>
+                                    <li key={index}>
+                                        {answer}
+                                    </li>)}
+                            </ul>
+                        </div>
                     </div>
+                </a>
+            );
+        }
+        else if ((this.state.currentState === 'correct')) {
+            return (
+                <div className="card">
+                    {this.props.correct_answer} is Correct!
                 </div>
             );
         }
         else {
             return (
-                <div>
-                    Under Construction
+                <div className="card">
+                    Sorry, the correct answer was {this.props.correct_answer}.
                 </div>
             );
         }
